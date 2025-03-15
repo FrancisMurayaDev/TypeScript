@@ -137,3 +137,34 @@ It will generate a `tsconfig.json` file which contains configuration options for
 - The file can be modified based on project needs.
 
 
+## First TypeScript Code:
+Create a file ending with `.ts`. For example: `hello.ts`.
+
+Write the code inside..
+
+```js
+let number1: number = 67;
+let number2: number = 53;
+
+console.log(number1 + number2);
+```
+
+- Now we need to compile the TypeScript code to JavaScript code.
+
+Inside the terminal run:
+
+```js
+tsc hello.ts
+```
+
+The code inside the file will be compiled to JS.
+There will be another file generated of `hello.js` after compilation.
+
+- During compilation, any errors will be caught.
+
+- Now we have `hello.js`. We need to run it now.
+
+```
+node hello.js
+```
+This will run the js code to provide an output.
