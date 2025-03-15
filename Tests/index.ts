@@ -31,3 +31,30 @@ console.log(newName);
 let result: null = null;
 // result = 5;
 // result = 'hello';
+
+// Type Any
+
+let myVar: any = 55;
+console.log(myVar);
+myVar = "Good Morning";
+console.log(myVar);
+
+// Type Unknown
+
+let myValue: unknown = 89;
+console.log(myValue);
+
+myValue = 'TypeScript';
+console.log(myValue);
+
+myValue = [1,4];
+console.log(myValue);
+
+myValue = {age: 15};
+console.log(myValue);
+
+myValue = true;
+console.log(myValue);
+
+// console.log(myValue.upperCase())  
+// This will throw an error since we cannot convert a boolean to uppercase.
