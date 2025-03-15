@@ -200,7 +200,7 @@ interface User {
   firstName: string;
   lastName: string;
   age?: number;
-  isAdmin: boolean;
+  readonly isAdmin: boolean;
 }
 
 let employeeName: User = {
@@ -210,14 +210,60 @@ let employeeName: User = {
   isAdmin: true
 }
 
+employeeName.isAdmin = false // Cannot assign to 'is Admin' because it it is a readonly property
+
 console.log(employeeName);
 
 ```
 
+### Optional Property for Interface.
+
 We use `?` to make a value optional. For instance code above, age is optional.
 
+### Readonly properties for Interfaces.
 
-## b. Class - defines blue prints for creating objects.
+We use `readonly` keyword for properties that should not be modified.
+
+### Extending Interfaces
+
+- It means creating a new interface that inherits properties from an existing one, allowing for re-use.
+
+- Uses the keyword `extends`.
+
+Example:
+
+```ts
+// Using Extends;
+
+interface UserDetails {
+  firstName: string;
+  lastName: string;
+  age: number;
+}
+
+// extends will extend the above properties of UserDetails into the StudentDetails.
+
+interface studentDetails extends UserDetails {
+  course: string;
+  yearOfStudy: number;
+}
+
+let student: studentDetails = {
+  firstName: "Jackline",
+  lastName: "Jack",
+  age:20,
+  course: "BBIT",
+  yearOfStudy: 2
+}
+```
+
+
+
+
+## b. Class - defines blue prints for creating objects with properties and methods.
+
+
+- When creating a class in TypeScript, we start by defining the properties then initialize those properties in the constructor function. 
 
 ## c. Enum - represent a set of named constant values.
 

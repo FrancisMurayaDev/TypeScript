@@ -42,4 +42,13 @@ var employeeName = {
     lastName: "Muraya",
     isAdmin: true
 };
+// employeeName.isAdmin = false // Cannot assign to 'is Admin' because it it is a readonly property
 console.log(employeeName);
+var student = {
+    firstName: "Jackline",
+    lastName: "Jack",
+    age: 20,
+    course: "BBIT",
+    yearOfStudy: 2
+};
+console.log(student);

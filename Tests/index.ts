@@ -68,7 +68,7 @@ interface User {
   firstName: string;
   lastName: string;
   age?: number;
-  isAdmin: boolean;
+  readonly isAdmin: boolean;
 }
 
 let employeeName: User = {
@@ -77,4 +77,32 @@ let employeeName: User = {
   isAdmin: true
 }
 
+// employeeName.isAdmin = false // Cannot assign to 'is Admin' because it it is a readonly property
+
 console.log(employeeName);
+
+
+// Using Extends;
+
+interface UserDetails {
+  firstName: string;
+  lastName: string;
+  age: number;
+}
+
+// extends will extend the above properties of UserDetails into the StudentDetails.
+
+interface studentDetails extends UserDetails {
+  course: string;
+  yearOfStudy: number;
+}
+
+let student: studentDetails = {
+  firstName: "Jackline",
+  lastName: "Jack",
+  age:20,
+  course: "BBIT",
+  yearOfStudy: 2
+}
+
+console.log(student);
