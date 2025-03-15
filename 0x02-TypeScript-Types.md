@@ -187,6 +187,45 @@ This usually happens in:
 3. Unreachable Code.
 
 
+# 4. Object Types
+
+- They define the shape of complex values such as:
+
+## a. Interface -define shape of an object structure.
+
+- Used for type checking objects and enforcing consistency.
+
+```ts
+interface User {
+  firstName: string;
+  lastName: string;
+  age?: number;
+  isAdmin: boolean;
+}
+
+let employeeName: User = {
+  firstName: "Francis",
+  lastName: "Muraya",
+  age: 24,
+  isAdmin: true
+}
+
+console.log(employeeName);
+
+```
+
+We use `?` to make a value optional. For instance code above, age is optional.
+
+
+## b. Class - defines blue prints for creating objects.
+
+## c. Enum - represent a set of named constant values.
+
+## d. Array - a set of elements that are of the same type. 
+
+## e. Represent an ordered list of elements with fixed types and lengths.
+
+
 
 
 

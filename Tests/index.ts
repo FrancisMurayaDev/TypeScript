@@ -58,3 +58,23 @@ console.log(myValue);
 
 // console.log(myValue.upperCase())  
 // This will throw an error since we cannot convert a boolean to uppercase.
+
+
+
+// Type Interface
+// The interface type should start with a capital letter (User).
+
+interface User {
+  firstName: string;
+  lastName: string;
+  age?: number;
+  isAdmin: boolean;
+}
+
+let employeeName: User = {
+  firstName: "Francis",
+  lastName: "Muraya",
+  isAdmin: true
+}
+
+console.log(employeeName);

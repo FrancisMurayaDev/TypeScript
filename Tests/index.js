@@ -37,5 +37,9 @@ myValue = { age: 15 };
 console.log(myValue);
 myValue = true;
 console.log(myValue);
-// console.log(myValue.upperCase())  
-// This will throw an error since we cannot convert a boolean to uppercase.
+var employeeName = {
+    firstName: "Francis",
+    lastName: "Muraya",
+    isAdmin: true
+};
+console.log(employeeName);
