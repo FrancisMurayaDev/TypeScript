@@ -126,12 +126,11 @@ class pupil {
 const Muraya = new pupil("Muraya", 24, 5678, "BBIT");
 console.log(Muraya);
 
-
 enum pizzaSize {
   small, //0
   medium, //1
   large, //2
-  extraLarge //3
+  extraLarge, //3
 }
 
 console.log(pizzaSize.small); //output: 0
@@ -141,3 +140,13 @@ let orderedPizzaSize: pizzaSize = 0;
 if (orderedPizzaSize === pizzaSize.small) {
   console.log(`Pay $5`); //output: Pay $5
 }
+
+enum shortSize {
+  Small = "Small",
+  Medium = "Medium",
+  Large = "Large",
+  ExtraLarge = "ExtraLarge",
+}
+
+console.log(shortSize.Small); //Small
+console.log(shortSize.Large); // Large

@@ -299,14 +299,14 @@ There are 2 types of Enums:
 
 ### 1. Numeric Enums
 
-Numeric Enums in typescript assign numerical values to their members, starting from 0 with subsequent members auto-incrementing. 
+Numeric Enums in typescript assign numerical values to their members, starting from 0 with subsequent members auto-incrementing.
 
 ```ts
 enum pizzaSize {
   small, //0
   medium, //1
   large, //2
-  extraLarge //3
+  extraLarge, //3
 }
 
 console.log(pizzaSize.small); //output: 0
@@ -318,33 +318,38 @@ if (orderedPizzaSize === pizzaSize.small) {
 }
 ```
 
-Since this is a Numeric Enum, we can also decide the number in which we want it to start from rather than zero. 
+Since this is a Numeric Enum, we can also decide the number in which we want it to start from rather than zero.
 
 In our above code, we will the value for `small` and the next one will be incremented by 1.
 
 Example:
+
 ```ts
 enum pizzaSize {
   small = 1000, //1000
   medium, //1001
   large, //1002
-  extraLarge //1003
+  extraLarge, //1003
 }
 ```
 
 Additionally, we can also give the other values a custom numeric value.
 
 Example:
+
 ```ts
 enum pizzaSize {
   small = 1000, //1000
   medium = 2000, //2000
   large = 3000, //3000
-  extraLarge = 4000 //4000
+  extraLarge = 4000, //4000
 }
 ```
 
- 
+### 2. String Enums
+
+String Enums in TypeScript assign string values to their members explicitly, ensuring each member holds a unique string value.
+
 ## d. Array - a set of elements that are of the same type.
 
 ## e. Represent an ordered list of elements with fixed types and lengths.
