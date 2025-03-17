@@ -1,4 +1,4 @@
-// First TypeScript Code 
+// First TypeScript Code
 
 let number1: number = 67;
 let number2: number = 53;

@@ -21,7 +21,7 @@ console.log(fullName);
 //Boolean Data Types
 
 const isTrue: boolean = true;
-const isFalse: boolean = false; 
+const isFalse: boolean = false;
 const newName: boolean = true;
 
 console.log(newName);
@@ -44,22 +44,20 @@ console.log(myVar);
 let myValue: unknown = 89;
 console.log(myValue);
 
-myValue = 'TypeScript';
+myValue = "TypeScript";
 console.log(myValue);
 
-myValue = [1,4];
+myValue = [1, 4];
 console.log(myValue);
 
-myValue = {age: 15};
+myValue = { age: 15 };
 console.log(myValue);
 
 myValue = true;
 console.log(myValue);
 
-// console.log(myValue.upperCase())  
+// console.log(myValue.upperCase())
 // This will throw an error since we cannot convert a boolean to uppercase.
-
-
 
 // Type Interface
 // The interface type should start with a capital letter (User).
@@ -74,13 +72,12 @@ interface User {
 let employeeName: User = {
   firstName: "Francis",
   lastName: "Muraya",
-  isAdmin: true
-}
+  isAdmin: true,
+};
 
 // employeeName.isAdmin = false // Cannot assign to 'is Admin' because it it is a readonly property
 
 console.log(employeeName);
-
 
 // Using Extends;
 
@@ -100,9 +97,31 @@ interface studentDetails extends UserDetails {
 let student: studentDetails = {
   firstName: "Jackline",
   lastName: "Jack",
-  age:20,
+  age: 20,
   course: "BBIT",
-  yearOfStudy: 2
-}
+  yearOfStudy: 2,
+};
 
 console.log(student);
+
+class pupil {
+  name: string;
+  age: number;
+  index: number;
+  major: string;
+
+  constructor(
+    pupilName: string,
+    pupilAge: number,
+    pupilIndex: number,
+    pupilMajor: string,
+  ) {
+    this.name = pupilName;
+    this.age = pupilAge;
+    this.index = pupilIndex;
+    this.major = pupilMajor;
+  }
+}
+
+const Muraya = new pupil("Muraya", 24, 5678, "BBIT");
+console.log(Muraya);
