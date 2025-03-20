@@ -103,3 +103,6 @@ var message = "Hell TypeScript"; // Inferred as a string.
 var count = 10; //Inferred as a number.
 console.log(message);
 console.log(count);
+var myString = "Hello World";
+myString;
+console.log(myString.length);

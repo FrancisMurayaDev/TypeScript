@@ -183,3 +183,8 @@ let count = 10; //Inferred as a number.
 console.log(message);
 console.log(count);
 
+
+let myString: unknown = "Hello World";
+
+(myString as string)
+console.log((myString as string).length); // 11
