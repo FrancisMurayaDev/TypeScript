@@ -88,5 +88,14 @@ console.log(shortSize.Large); // Large
 var luckynumbers = [10, 45, 43, 32, 34, 67];
 console.log(luckynumbers);
 var myItems = [4, true, "Milk"];
-console.log(myItems);
+console.log(myItems); // [4, true, 'Milk']
 //This array can hold a string, a number and a boolean
+var userInfo = ["John", 34, true];
+console.log(userInfo);
+// specify number of arrays and data types positions in the array.
+// We can also have named Tuples.
+var borderBox = ["2px", "solid", "purple"];
+console.log(borderBox); // ['2px', 'solid', 'purple']
+var border;
+border = ["2px", "solid"];
+console.log(border);

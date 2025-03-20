@@ -380,6 +380,42 @@ console.log(myItems); // [4, true, 'Milk']
 ```
 Supplying data types using the pipes `|`, that us what we call `union types`.
 
+### Tuple
+
+A tuple is a special kind of array with fixed types and a fixed number of elements. 
+
+Example: defining an array:
+
+```ts
+let userInfo: [string, number, boolean] = ["John", 34, true];
+console.log(userInfo);
+
+// specify number of arrays and data types positions in the array.
+```
+- A tuple holds a fixed number of elements.
+
+### Named Tuples
+
+```ts
+// We can also have named Tuples.
+const border: [width: string, style: string, color: string] = ["2px", "solid", "purple"];
+
+console.log(border); // ['2px', 'solid', 'purple']
+```
+### Tuples can also have optional elements. 
+
+- To specify that an element is optional, use `?`.
+
+```ts
+let border: [string, string, string?];
+border = ["2px", "solid"]
+console.log(border);
+
+```
+
+
+
+
 
 
 

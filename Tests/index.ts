@@ -160,3 +160,19 @@ const myItems: (string | number | boolean) []= [4, true, "Milk"];
 console.log(myItems); // [4, true, 'Milk']
 
 //This array can hold a string, a number and a boolean
+
+let userInfo: [string, number, boolean] = ["John", 34, true];
+console.log(userInfo);
+
+// specify number of arrays and data types positions in the array.
+
+
+// We can also have named Tuples.
+const borderBox: [width: string, style: string, color: string] = ["2px", "solid", "purple"];
+
+console.log(borderBox); // ['2px', 'solid', 'purple']
+
+let border: [string, string, string?];
+border = ["2px", "solid"]
+console.log(border);
+
