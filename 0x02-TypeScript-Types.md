@@ -350,6 +350,38 @@ enum pizzaSize {
 
 String Enums in TypeScript assign string values to their members explicitly, ensuring each member holds a unique string value.
 
+```ts
+enum shortSize {
+  Small = "Small",
+  Medium = "Medium",
+  Large = "Large",
+  ExtraLarge = "ExtraLarge",
+}
+
+console.log(shortSize.Small); //Small
+console.log(shortSize.Large); // Large
+```
+
 ## d. Array - a set of elements that are of the same type.
+
+```ts
+let luckynumbers: number[] = [10, 45, 43, 32, 34, 67];
+console.log(luckynumbers);
+```
+- If you want an array to hold items of various data types, we can specify these data types using the `union types` (more about union types later).
+
+```ts
+const myItems: (string | number | boolean) []= [4, true, "Milk"];
+
+console.log(myItems); // [4, true, 'Milk']
+
+//This array can hold a string, a number and a boolean
+
+```
+Supplying data types using the pipes `|`, that us what we call `union types`.
+
+
+
+
 
 ## e. Represent an ordered list of elements with fixed types and lengths.

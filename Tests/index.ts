@@ -150,3 +150,13 @@ enum shortSize {
 
 console.log(shortSize.Small); //Small
 console.log(shortSize.Large); // Large
+
+let luckynumbers: number[] = [10, 45, 43, 32, 34, 67];
+console.log(luckynumbers);
+
+
+const myItems: (string | number | boolean) []= [4, true, "Milk"];
+
+console.log(myItems); // [4, true, 'Milk']
+
+//This array can hold a string, a number and a boolean
