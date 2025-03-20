@@ -176,3 +176,10 @@ let border: [string, string, string?];
 border = ["2px", "solid"]
 console.log(border);
 
+let message = "Hell TypeScript"; // Inferred as a string.
+
+let count = 10; //Inferred as a number.
+
+console.log(message);
+console.log(count);
+

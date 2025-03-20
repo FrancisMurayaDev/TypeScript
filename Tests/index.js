@@ -99,3 +99,7 @@ console.log(borderBox); // ['2px', 'solid', 'purple']
 var border;
 border = ["2px", "solid"];
 console.log(border);
+var message = "Hell TypeScript"; // Inferred as a string.
+var count = 10; //Inferred as a number.
+console.log(message);
+console.log(count);
